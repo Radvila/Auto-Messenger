@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Auto_Messenger</RootNamespace>
+    <AssemblyName>Auto-Messenger</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="facebook api\Build\NuGet\Facebook\serializers\JsonNetSerializer.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\ApiResultSerializationTest.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\FacebookIntegrationTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\FqlReadTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\GraphInsiteTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\GraphPublishTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\GraphReadTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\Helpers\TestHelpers.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\Properties\AssemblyInfo.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\RestPublishTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\RestReadTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\TypedObjectTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.IntegrationTests\User.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="facebook api\Source\Facebook.Tests\DateTimeConverterTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\DummyIntegrationTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetGraphException\Object\GivenAnEmptyDictionaryOfStringObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetGraphException\Object\GivenANonEmptyDictionaryOfStringObjectThatDoesNotContainErrorKeyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetGraphException\Object\GivenInputAsNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetGraphException\Object\GivenNonNullInputNotOfTypeIDictionaryStringObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenADictionaryOfStringObjectThatContainsErrorCodeAndErrorMessageStringThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenADictionaryOfStringObjectThatContainsErrorCodeOnlyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenADictionaryOfStringObjectWithErrorCode190Then.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenADictionaryOfStringObjectWithErrorCode4Then.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenADictionaryOfStringObjectWithErrorCodeAsApiEcTooManyCallsThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenAnDictionaryStringObjectWithErrorCodeNotEqualTo190Or4WithMessageRequestLimitReachedThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenAnEmptyDictionaryOfStringObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenANonEmptyDictionaryOfStringObjectThatDoesNotContainErrorCodeKeyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenInputAsNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\ExceptionFactory\GetRestException\GivenNonNullInputNotOfTypeIDictionaryStringObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\ConstructorTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\GetDialogUrlTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\GetLoginUrlTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\LegacyRestApiReadOnlyCallsTest.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\ParseOAuthCallbackUrlTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\ParseSignedRequestTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\ParseUrlQueryStringTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClientTests\SerializeJsonTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ExtractMediaObject\GivenEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ExtractMediaObject\GivenMoreThanOneMediaObjectsOnlyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ExtractMediaObject\GivenNullParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ExtractMediaObject\GivenOneMediaObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ExtractMediaObject\GiveOneMediaObjectOnlyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\GetApiUrl\Fakes\FakeFacebookClient.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\GetApiUrl\GivenMethodIsNotAllSmallLetterThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\GetApiUrl\GivenMethodIsVideoUploadThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\GetApiUrl\GivenMethodsThanAreNotReadOnlyOrVideoUploadThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\GetApiUrl\GivenMethodsThatAreOfReadOnlyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\Get\ParametersOnly.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\Get\PathOnly.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ProcessBatchResult\ProcessBatchResultTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookClient\ProcessBatchResult\ProcessBatchResultTestsWhenOmitResponseOnSuccessIsTrue.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookOAuthResultTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ConvertToString\GivenAHttpMethodEnumThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ConvertToString\GivenANumberInEnumRangeThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ConvertToString\GivenANumberOutOfHttpMethodRangeThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DateTimeConvertorTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DomainMapConstansTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DomainMapsBetaSecureTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DomainMapsBetaTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DomainMapsSecureTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DomainMapsTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\DropQueryParametersTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\FromIso8601FormattedDateTimeTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\FromUnixTime\GivenAUnixTimeInDoubleThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\FromUnixTime\GivenAUnixTimeInStringThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\IsUsingRestApi\GivenDomainMapsAsNull\AndRequestUriIsApiReadThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\IsUsingRestApi\GivenDomainMapsAsNull\AndRequestUriIsApiUrlThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\IsUsingRestApi\GivenDomainMapsAsNull\AndRequestUriIsApiVideoThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\IsUsingRestApi\GivenDomainMapsAsNull\AndRequestUriIsGraphUrlThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenBothInputsAreEmptyAndNotNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenBothInputsAreNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenBothTheCombinationOfFirstInputAndSecondInputContainsUniqueKeysThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenFirstInputContainsValuesAndSecondIsNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenFirstInputIsEmptyAndNotNullAndSecondInputIsNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenFirstInputIsNullAndSecondContainsValuesThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenFirstInputIsNullAndSecondIsEmptyAndNotNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\Merge\WhenMergingTwoObjectDictionariesThatDoesnotContainUniqueKeysThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\MultiPartFormPrefixTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\MultipPartNewLineTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\BuildMediaObjectPostData.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathAsEmptyStringAndEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathStartingWithForwardSlashAndNoQueryStringAndEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathStartingWithForwardSlashWithQuerystringAndEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathWith2QuerystringsAndEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathWithoutQuerystringAndEmptyParametersThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAPathWithQueryStringShouldUrlDecodeCorrectly.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAUrlHostIsFacebookGraphWithoutQuerystringAndParameterIsEmptyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseQueryParametersToDictionary\GivenAUrlHostIsFacebookGraphWithQuerystringAndParameterIsEmptyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQuerystringAsNullThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQuerystringAsStringEmptyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQuerystringAsWhitespaceThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQueryStringWithAcessTokenAndExpiresInThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQuerystringWithCodeThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAQueryStringWithErrorThenDescriptionContainingPlusSignThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ParseUrlQueryString\GivenAValidQuerystringThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToDictionary\ToDictionary.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\GivenADateTimeWithTimeZoneThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\GivenAFQLQueryThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\GivenAnObjectWithASecondLevelThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\WhenObjectDictionaryContainsObjectAsListOfStringThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\WhenObjectDictionaryHasValuesThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\WhenObjectDictionaryIsNotNullAndEmptyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\WhenStringDictionaryHasValuesThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToJsonQueryString\WhenStringDictionaryIsNotNullAndEmptyThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\ToUnixTime\GivenADateTimeObjectThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlDecode\GivenAUrlEncodedFacebookAccessTokenThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlDecode\GivenAUrlPartWithPlusSignThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlDecode\GivenAUrlWithPipeLineEncodedAsPercent7CThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlEncode\GivenAStringWithPipleLineSymbolThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlEncode\GivenAUrlEncodedCodeThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\FacebookUtils\UrlEncode\GivenAUrlPartWithWhiteSpacesThen.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\HttpHelperTests.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\Properties\AssemblyInfo.cs" />
+    <Compile Include="facebook api\Source\Facebook.Tests\TestExtensions.cs" />
+    <Compile Include="facebook api\Source\Facebook\CombinationStream.cs" />
+    <Compile Include="facebook api\Source\Facebook\DateTimeConvertor.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookApiEventArgs.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookApiException.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookApiLimitException.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookBatchParameter.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Async.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Async.Tasks.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Batch.Async.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Batch.Async.Tasks.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Batch.Sync.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.OAuthResult.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.SignedRequest.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Subscription.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookClient.Sync.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookMediaObject.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookMediaStream.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookOAuthException.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookOAuthResult.cs" />
+    <Compile Include="facebook api\Source\Facebook\FacebookUploadProgressChangedEventArgs.cs" />
+    <Compile Include="facebook api\Source\Facebook\GlobalSuppressions.cs" />
+    <Compile Include="facebook api\Source\Facebook\HttpHelper.cs" />
+    <Compile Include="facebook api\Source\Facebook\HttpMethod.cs" />
+    <Compile Include="facebook api\Source\Facebook\HttpWebRequestCreatedEventArgs.cs" />
+    <Compile Include="facebook api\Source\Facebook\Properties\AssemblyInfo.cs" />
+    <Compile Include="facebook api\Source\Facebook\SimpleJson.cs" />
+    <Compile Include="facebook api\Source\Facebook\TaskExtensions.cs" />
+    <Compile Include="facebook api\Source\GlobalAssemblyInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="facebook api\.gitattributes" />
+    <None Include="facebook api\.gitignore" />
+    <None Include="facebook api\build.cmd" />
+    <None Include="facebook api\Build\doc.shfbproj" />
+    <None Include="facebook api\Build\NuGet\Facebook\Facebook.nuspec" />
+    <None Include="facebook api\Build\SymbolSource\Facebook\Facebook.nuspec" />
+    <None Include="facebook api\clean.cmd" />
+    <None Include="facebook api\contribute.md" />
+    <None Include="facebook api\doc-config.json" />
+    <None Include="facebook api\README.md" />
+    <None Include="facebook api\Source\.nuget\NuGet.Config" />
+    <None Include="facebook api\Source\.nuget\NuGet.targets" />
+    <None Include="facebook api\Source\.nuget\packages.config" />
+    <None Include="facebook api\Source\CustomRules.ruleset" />
+    <None Include="facebook api\Source\Facebook.IntegrationTests\packages.config" />
+    <None Include="facebook api\Source\Facebook.Tests\app.config" />
+    <None Include="facebook api\Source\Facebook.Tests\packages.config" />
+    <None Include="facebook api\Source\Facebook\packages.config" />
+    <None Include="facebook api\Source\packages\repositories.config" />
+    <None Include="facebook api\Source\Settings.StyleCop" />
+    <None Include="facebook api\Source\SharedKey.snk" />
+    <None Include="facebook api\VERSION" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="facebook api\Build\njake.js" />
+    <Content Include="facebook api\Build\readme.txt" />
+    <Content Include="facebook api\jakefile.js" />
+    <Content Include="facebook api\LICENSE.txt" />
+    <Content Include="facebook api\NOTICE.txt" />
+    <Content Include="facebook api\Source\CustomDictionary.xml" />
+    <Content Include="facebook api\Source\Facebook-Net35.sln" />
+    <Content Include="facebook api\Source\Facebook-Net40.sln" />
+    <Content Include="facebook api\Source\Facebook-Net45.sln" />
+    <Content Include="facebook api\Source\Facebook-SL5.sln" />
+    <Content Include="facebook api\Source\Facebook-Universal-8.1.sln" />
+    <Content Include="facebook api\Source\Facebook-WindowsStore.sln" />
+    <Content Include="facebook api\Source\Facebook-WP7.sln" />
+    <Content Include="facebook api\Source\Facebook-WP8.1-SL.sln" />
+    <Content Include="facebook api\Source\Facebook-WP8.sln" />
+    <Content Include="facebook api\Source\Facebook.IntegrationTests\Facebook.IntegrationTests.csproj" />
+    <Content Include="facebook api\Source\Facebook.Tests\Facebook.Tests-SL5.csproj" />
+    <Content Include="facebook api\Source\Facebook.Tests\Facebook.Tests.csproj" />
+    <Content Include="facebook api\Source\Facebook.Tests\Properties\AppManifest.xml" />
+    <Content Include="facebook api\Source\Facebook\Facebook-Net35.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-Net40.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-Net45.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-SL5.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-Universal-8.1.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-WindowsStore.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-WP7.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-WP8.1-SL.csproj" />
+    <Content Include="facebook api\Source\Facebook\Facebook-WP8.csproj" />
+    <Content Include="facebook api\Source\logo32x32.png" />
+    <Content Include="facebook api\Source\logo500x500.png" />
+    <Content Include="facebook api\Source\logo75x75.png" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\EULA.txt" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.Silverlight.Testing.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.Silverlight.Testing.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.Silverlight.Testing.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-04-2010-SL4\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.Silverlight.Testing.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.Silverlight.Testing.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.Silverlight.Testing.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\MicrosoftSilverlightTesting-05-2010-SL3\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit-silverlight3.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit-silverlight3.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit-silverlight3.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit.extensions-silverlight3.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit.extensions-silverlight3.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunit.extensions-silverlight3.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunitcontrib.runner.silverlight.toolkit-sl3.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight3\xunitcontrib.runner.silverlight.toolkit-sl3.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit-silverlight4.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit-silverlight4.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit-silverlight4.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit.extensions-silverlight4.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit.extensions-silverlight4.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunit.extensions-silverlight4.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunitcontrib.runner.silverlight.toolkit-sl4.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\Silverlight4\xunitcontrib.runner.silverlight.toolkit-sl4.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit-silverlight-wp7.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit-silverlight-wp7.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit-silverlight-wp7.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit.extensions-silverlight-wp7.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit.extensions-silverlight-wp7.pdb" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunit.extensions-silverlight-wp7.xml" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunitcontrib.runner.silverlight.toolkit-wp7.dll" />
+    <Content Include="facebook api\Tools\xunitcontrib-silverlight.0.2\WindowsPhone7\xunitcontrib.runner.silverlight.toolkit-wp7.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="facebook api\Source\Facebook.Tests\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto-Messenger", "Auto-Messenger\Auto-Messenger.csproj", "{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC003C05-4EC4-4E3D-866F-C4BA9F5AF0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA2072A9-D845-43DF-9E56-A7C66C0D1069}
+	EndGlobalSection
+EndGlobal
